@@ -1,0 +1,64 @@
+/* Reset margin dan padding untuk seluruh elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Section Hero */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Menggunakan seluruh tinggi layar */
+    background-image: url('ss.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Konten Hero */
+.hero-content {
+    color: white;
+    z-index: 10;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Gambar PNG di kanan bawah */
+.hero-image {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    width: 200px; /* Ukuran gambar PNG */
+    z-index: 5;
+}
+
+/* Responsif untuk perangkat mobile */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-image {
+        width: 150px; /* Ukuran gambar lebih kecil di perangkat mobile */
+    }
+}
+.h1{
+    text-align: center;
+}
